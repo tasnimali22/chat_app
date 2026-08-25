@@ -1,16 +1,22 @@
-# chatapp
+# 💬 Chat App (Flutter & Firebase)
 
-A new Flutter project.
+تطبيق محادثة فورية (Chat Application) يتيح للمستخدمين التواصل وتبادل الرسائل، مدمج مع **Firebase** لإدارة الخدمات الخلفية والبيانات الفورية.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📁 هيكلية المشروع (Project Structure)
 
-A few resources to get you started if this is your first Flutter project:
+```text
+lib/
+├── pages/                  # شاشات التطبيق الرئيسية (Login, Register, Chat UI)
+├── constant/               # الثوابت مثل الألوان والأشياء المكررة (App Constants)
+├── customWidget/           # العناصر البرمجية المخصصة (Custom Buttons, Inputs, Bubble Messages)
+├── fetchData/              # منطق واستدعاء البيانات (Firebase Queries & Data Fetching)
+├── model/                  # نماذج البيانات (Message & User Models)
+├── firebase_options.dart   # إعدادات وتكينات Firebase لكل منصة
+└── main.dart               # نقطة انطلاق التطبيق الرئيسية
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+التقنيات والمكتبات (Tech Stack)
+Framework: Flutter
+Language: Dart
+Backend & Database: Firebase (Cloud Firestore / Firebase Auth)
